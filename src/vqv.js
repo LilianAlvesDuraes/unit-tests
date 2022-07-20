@@ -20,12 +20,12 @@
 
 const vqv = (name, years) => {
   let frase = `Oi, meu nome é ${name}!\nTenho ${years} anos,\ntrabalho na Trybe e mando muito em programação!\n#VQV!`; 
-if (name === '') {
+if (name === '' && typeof years === '') {
   return undefined;
-}else if (typeof years === '') {
-  return undefined;
+}else {
+  return frase;
 }
-  return frase
+  
 };
 
 
