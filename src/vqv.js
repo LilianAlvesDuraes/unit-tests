@@ -19,14 +19,10 @@
 */
 
 const vqv = (name, years) => {
-  let frase = `Oi, meu nome é ${name}!\nTenho ${years} anos,\ntrabalho na Trybe e mando muito em programação!\n#VQV!`; 
-if (name === '' && typeof years === '') {
-  return undefined;
-}else {
+  if (!name || !years ) {
+    return undefined;
+  }
+  const frase = `Oi, meu nome é ${name}!\nTenho ${years} anos,\ntrabalho na Trybe e mando muito em programação!\n#VQV!`; 
   return frase;
-}
-  
 };
-
-
 module.exports = vqv;
